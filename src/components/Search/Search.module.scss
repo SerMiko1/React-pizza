@@ -1,0 +1,24 @@
+.root {
+    position: relative;
+    left: -200px;
+}
+
+
+
+.input {
+    border: 1px solid #3d3d3d;
+    padding: 12px 20px;
+    width: 250px;
+    border-radius: 50px;
+    font-size: 15px;
+    transition: all 0.15s ease-in-out;
+
+    &:focus {
+        border: 1px solid #fe5f1e;
+        width: 350px;
+    } 
+
+    &:hover {
+        border: 1px solid #fe5f1e;
+    }
+}
