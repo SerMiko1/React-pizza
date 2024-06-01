@@ -12,8 +12,7 @@ body {
   width: calc(120vw - 100px);
   height: 100%;
   background-color: #fff;
-  margin: 50px auto;
-  border-radius: 10px;
+  margin: 20px auto;
   max-width: 1400px;
 }
 
@@ -32,7 +31,7 @@ body {
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 20px;
 
     @media (max-width: 1400px) {
@@ -56,7 +55,7 @@ body {
     @media (max-width: 1295px) {
         .categories {
           width: 100%;
-          overflow: scroll;
+          overflow: auto;
           border-radius: 50px;
           -webkit-border-radius: 50px;
           -moz-border-radius: 50px;
@@ -65,13 +64,13 @@ body {
         }}
 
       .sort {
-        padding-left: 20px;
         b{
           display: none;
           justify-content: center;
+          width: calc(3) ;
         }
       }
-      @media (max-width: 780px) {
+      @media (max-width: 960px) {
         .categories {
         margin-bottom: 30px;
         }
